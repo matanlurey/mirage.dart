@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Simplex class from the mirage library, for the Dart programming language.">
+  <title>Simplex class - mirage library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">mirage</a></li>
+    <li><a href="../mirage/mirage-library.html">mirage.dart</a></li>
+    <li class="self-crumb">Simplex class</li>
+  </ol>
+  <div class="self-name">Simplex</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="mirage&#47;mirage-library-sidebar.html"
+    data-below-sidebar="mirage&#47;Simplex-class-sidebar.html">
+    <div>
+<h1><span class="kind-class">Simplex</span> class 
+    <a href="https://dart.dev/language/class-modifiers#final" class="feature feature-final" title="This class can neither be extended, implemented, nor mixed in.">final</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>A <a href="https://en.wikipedia.org/wiki/Simplex_noise">simplex noise</a> generator.</p>
+<p>Typically an improvement over <a href="../mirage/Perlin-class.html">Perlin</a> noise, offering similar smoothness
+and organic patterns but with better performance and fewer directional
+artifacts; often considered the best general-purpose noise algorithm.</p>
+<p><img src="https://github.com/user-attachments/assets/ec9c44c1-fe6d-4ae4-99cc-09527229797e" alt="Example"></p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+
+        
+        
+  <dt>Mixed in types</dt>
+  <dd>
+    <ul class="comma-separated clazz-relationships">
+        <li><a href="../mirage/Pattern2d-class.html">Pattern2d</a></li>
+    </ul>
+  </dd>
+
+
+
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="Simplex" class="callable">
+          <span class="name"><a href="../mirage/Simplex/Simplex.html">Simplex</a></span><span class="signature">(<span class="parameter" id="-param-hasher">[<span class="type-annotation"><a href="../mirage/NoiseHasher-class.html">NoiseHasher</a>?</span> <span class="parameter-name">hasher</span>]</span>)</span>
+        </dt>
+        <dd>
+          Creates a new simplex noise generator.
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-properties">
+    <h2>Properties</h2>
+    <dl class="properties">
+        <dt id="absolute" class="property inherited">
+  <span class="name"><a href="../mirage/Pattern2d/absolute.html">absolute</a></span>
+  <span class="signature">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that returns the absolute value of the output of
+this pattern.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="inverted" class="property inherited">
+  <span class="name"><a href="../mirage/Pattern2d/inverted.html">inverted</a></span>
+  <span class="signature">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that is the inverse of this pattern.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="normalized" class="property inherited">
+  <span class="name"><a href="../mirage/Pattern2d/normalized.html">normalized</a></span>
+  <span class="signature">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that normalizes the output of this pattern to the
+range of <code>[0.0, 1.0]</code>.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/Type-class.html">Type</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="transposed" class="property inherited">
+  <span class="name"><a href="../mirage/Pattern2d/transposed.html">transposed</a></span>
+  <span class="signature">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that is the transpose of this pattern.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="add" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/add.html">add</a></span><span class="signature">(<wbr><span class="parameter" id="add-param-pattern"><span class="type-annotation"><a href="../mirage/Pattern2d-class.html">Pattern2d</a></span> <span class="parameter-name">pattern</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that adds the output of this pattern with the output
+of the given <code>pattern</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="get2d" class="callable">
+  <span class="name"><a href="../mirage/Simplex/get2d.html">get2d</a></span><span class="signature">(<wbr><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Returns the value of the pattern at the given coordinates.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="map" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/map.html">map</a></span><span class="signature">(<wbr><span class="parameter" id="map-param-map"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">map</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span></span>)</span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that maps the output of this pattern using the given
+function.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="max" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/max.html">max</a></span><span class="signature">(<wbr><span class="parameter" id="max-param-pattern"><span class="type-annotation"><a href="../mirage/Pattern2d-class.html">Pattern2d</a></span> <span class="parameter-name">pattern</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that returns the maximum value between the output of
+two patterns.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="min" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/min.html">min</a></span><span class="signature">(<wbr><span class="parameter" id="min-param-pattern"><span class="type-annotation"><a href="../mirage/Pattern2d-class.html">Pattern2d</a></span> <span class="parameter-name">pattern</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that returns the minimum value between the output of
+two patterns.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="scale" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/scale.html">scale</a></span><span class="signature">(<wbr><span class="parameter" id="scale-param-factor"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">factor</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that scales the output of this pattern by the given
+<code>factor</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="subtract" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/subtract.html">subtract</a></span><span class="signature">(<wbr><span class="parameter" id="subtract-param-pattern"><span class="type-annotation"><a href="../mirage/Pattern2d-class.html">Pattern2d</a></span> <span class="parameter-name">pattern</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that subtracts the output of the given <code>pattern</code>
+from the output of this pattern.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator *" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/operator_multiply.html">operator *</a></span><span class="signature">(<wbr><span class="parameter" id="*-param-factor"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">factor</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that scales the output of this pattern by the given
+<code>factor</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="operator +" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/operator_plus.html">operator +</a></span><span class="signature">(<wbr><span class="parameter" id="+-param-pattern"><span class="type-annotation"><a href="../mirage/Pattern2d-class.html">Pattern2d</a></span> <span class="parameter-name">pattern</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that adds the output of this pattern with the output
+of the given <code>pattern</code>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="operator -" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/operator_minus.html">operator -</a></span><span class="signature">(<wbr><span class="parameter" id="--param-pattern"><span class="type-annotation"><a href="../mirage/Pattern2d-class.html">Pattern2d</a></span> <span class="parameter-name">pattern</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that subtracts the output of the given <code>pattern</code>
+from the output of this pattern.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="operator unary-" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/operator_unary_minus.html">operator unary-</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../mirage/Pattern2d-class.html">Pattern2d</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a new pattern that is the inverse of this pattern.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">mirage</a></li>
+    <li><a href="../mirage/mirage-library.html">mirage</a></li>
+    <li class="self-crumb">Simplex class</li>
+</ol>
+
+
+    <h5>mirage library</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    mirage
+      0.1.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
