@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the reinterpret method from the IVec2 extension type, for the Dart programming language.">
-  <title>reinterpret method - IVec2 extension type - mirage library - Dart API</title>
+  <meta name="description" content="API docs for the get2df method from the Perlin class, for the Dart programming language.">
+  <title>get2df method - Perlin class - mirage library - Dart API</title>
 
 
   
@@ -30,10 +30,10 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage.dart</a></li>
-    <li><a href="../../mirage/IVec2-extension-type.html">IVec2</a></li>
-    <li class="self-crumb">reinterpret method</li>
+    <li><a href="../../mirage/Perlin-class.html">Perlin</a></li>
+    <li class="self-crumb">get2df method</li>
   </ol>
-  <div class="self-name">reinterpret</div>
+  <div class="self-name">get2df</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -54,33 +54,45 @@
 <div
     id="dartdoc-main-content"
     class="main-content"
-    data-above-sidebar="mirage&#47;IVec2-extension-type-sidebar.html"
+    data-above-sidebar="mirage&#47;Perlin-class-sidebar.html"
     data-below-sidebar="">
     <div>
-<h1><span class="kind-method">reinterpret</span> method 
+<h1><span class="kind-method">get2df</span> method 
 </h1></div>
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@<a href="https://api.dart.dev/stable/3.4.4/dart-core/override-constant.html">override</a></li>
+    </ol>
+  </div>
 
-<span class="returntype"><a href="../../mirage/Vec2-extension-type.html">Vec2</a></span>
-<span class="name ">reinterpret</span>(<wbr>)
+<span class="returntype"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
+<span class="name ">get2df</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="get2df-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span></li>
+<li><span class="parameter" id="get2df-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span></span></li>
+</ol>)
 
-      
+      <div class="features"><span class="feature">override</span></div>
 
     </section>
     
 <section class="desc markdown">
-  <p>Reinprets the vector as a 2D floating-point vector.</p>
+  <p>Returns the value of the pattern at the given floating-point coordinates.</p>
+<p>The value returned is typically within the range of <code>[-1.0, 1.0]</code>, where:</p>
+<ul>
+<li><code>-1.0</code> represents the lowest value of the pattern;</li>
+<li><code>0.0</code> represents the middle value of the pattern;</li>
+<li><code>1.0</code> represents the highest value of the pattern.</li>
+</ul>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">Vec2 reinterpret() {
-  return Vec2(reinterpretAsDouble(x), reinterpretAsDouble(y));
-}</code></pre>
+  <pre class="language-dart"><code class="language-dart">@override
+double get2df(double x, double y) =&gt; _perlin2d(Vec2(x, y));</code></pre>
 </section>
 
 
@@ -97,12 +109,12 @@
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage</a></li>
-    <li><a href="../../mirage/IVec2-extension-type.html">IVec2</a></li>
-    <li class="self-crumb">reinterpret method</li>
+    <li><a href="../../mirage/Perlin-class.html">Perlin</a></li>
+    <li class="self-crumb">get2df method</li>
 </ol>
 
 
-    <h5>IVec2 extension type</h5>
+    <h5>Perlin class</h5>
     <div id="dartdoc-sidebar-left-content"></div>
   </div><!--/.sidebar-offcanvas-->
 
@@ -114,7 +126,7 @@
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

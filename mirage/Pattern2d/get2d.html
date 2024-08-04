@@ -31,7 +31,7 @@
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage.dart</a></li>
     <li><a href="../../mirage/Pattern2d-class.html">Pattern2d</a></li>
-    <li class="self-crumb">get2d abstract method</li>
+    <li class="self-crumb">get2d method</li>
   </ol>
   <div class="self-name">get2d</div>
   <form class="search navbar-right" role="search">
@@ -57,7 +57,7 @@
     data-above-sidebar="mirage&#47;Pattern2d-class-sidebar.html"
     data-below-sidebar="">
     <div>
-<h1><span class="kind-method">get2d</span> abstract method 
+<h1><span class="kind-method">get2d</span> method 
 </h1></div>
 
     <section class="multi-line-signature">
@@ -73,7 +73,7 @@
     </section>
     
 <section class="desc markdown">
-  <p>Returns the value of the pattern at the given coordinates.</p>
+  <p>Returns the value of the pattern at the given fixed-point coordinates.</p>
 <p>The value returned is typically within the range of <code>[-1.0, 1.0]</code>, where:</p>
 <ul>
 <li><code>-1.0</code> represents the lowest value of the pattern;</li>
@@ -86,7 +86,7 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">double get2d(int x, int y);</code></pre>
+  <pre class="language-dart"><code class="language-dart">double get2d(int x, int y) =&gt; get2df(x.toDouble(), y.toDouble());</code></pre>
 </section>
 
 
@@ -104,7 +104,7 @@
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage</a></li>
     <li><a href="../../mirage/Pattern2d-class.html">Pattern2d</a></li>
-    <li class="self-crumb">get2d abstract method</li>
+    <li class="self-crumb">get2d method</li>
 </ol>
 
 
@@ -120,7 +120,7 @@
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

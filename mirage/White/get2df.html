@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the get2d method from the Value class, for the Dart programming language.">
-  <title>get2d method - Value class - mirage library - Dart API</title>
+  <meta name="description" content="API docs for the get2df method from the White class, for the Dart programming language.">
+  <title>get2df method - White class - mirage library - Dart API</title>
 
 
   
@@ -30,10 +30,10 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage.dart</a></li>
-    <li><a href="../../mirage/Value-class.html">Value</a></li>
-    <li class="self-crumb">get2d method</li>
+    <li><a href="../../mirage/White-class.html">White</a></li>
+    <li class="self-crumb">get2df method</li>
   </ol>
-  <div class="self-name">get2d</div>
+  <div class="self-name">get2df</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -54,10 +54,10 @@
 <div
     id="dartdoc-main-content"
     class="main-content"
-    data-above-sidebar="mirage&#47;Value-class-sidebar.html"
+    data-above-sidebar="mirage&#47;White-class-sidebar.html"
     data-below-sidebar="">
     <div>
-<h1><span class="kind-method">get2d</span> method 
+<h1><span class="kind-method">get2df</span> method 
 </h1></div>
 
     <section class="multi-line-signature">
@@ -69,8 +69,8 @@
   </div>
 
 <span class="returntype"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
-<span class="name ">get2d</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span></li>
-<li><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span></li>
+<span class="name ">get2df</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="get2df-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span></li>
+<li><span class="parameter" id="get2df-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span></span></li>
 </ol>)
 
       <div class="features"><span class="feature">override</span></div>
@@ -78,7 +78,7 @@
     </section>
     
 <section class="desc markdown">
-  <p>Returns the value of the pattern at the given coordinates.</p>
+  <p>Returns the value of the pattern at the given floating-point coordinates.</p>
 <p>The value returned is typically within the range of <code>[-1.0, 1.0]</code>, where:</p>
 <ul>
 <li><code>-1.0</code> represents the lowest value of the pattern;</li>
@@ -92,7 +92,7 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
-double get2d(int x, int y) =&gt; _value2d(Vec2.fromInts(x, y));</code></pre>
+double get2df(double x, double y) =&gt; _random.nextDouble() * 2.0 - 1.0;</code></pre>
 </section>
 
 
@@ -109,12 +109,12 @@ double get2d(int x, int y) =&gt; _value2d(Vec2.fromInts(x, y));</code></pre>
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage</a></li>
-    <li><a href="../../mirage/Value-class.html">Value</a></li>
-    <li class="self-crumb">get2d method</li>
+    <li><a href="../../mirage/White-class.html">White</a></li>
+    <li class="self-crumb">get2df method</li>
 </ol>
 
 
-    <h5>Value class</h5>
+    <h5>White class</h5>
     <div id="dartdoc-sidebar-left-content"></div>
   </div><!--/.sidebar-offcanvas-->
 
@@ -126,7 +126,7 @@ double get2d(int x, int y) =&gt; _value2d(Vec2.fromInts(x, y));</code></pre>
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

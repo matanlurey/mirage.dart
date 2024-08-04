@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the get2d method from the Perlin class, for the Dart programming language.">
-  <title>get2d method - Perlin class - mirage library - Dart API</title>
+  <meta name="description" content="API docs for the getUnchecked method from the ScalarField class, for the Dart programming language.">
+  <title>getUnchecked method - ScalarField class - mirage library - Dart API</title>
 
 
   
@@ -30,10 +30,10 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage.dart</a></li>
-    <li><a href="../../mirage/Perlin-class.html">Perlin</a></li>
-    <li class="self-crumb">get2d method</li>
+    <li><a href="../../mirage/ScalarField-class.html">ScalarField</a></li>
+    <li class="self-crumb">getUnchecked method</li>
   </ol>
-  <div class="self-name">get2d</div>
+  <div class="self-name">getUnchecked</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -54,45 +54,34 @@
 <div
     id="dartdoc-main-content"
     class="main-content"
-    data-above-sidebar="mirage&#47;Perlin-class-sidebar.html"
+    data-above-sidebar="mirage&#47;ScalarField-class-sidebar.html"
     data-below-sidebar="">
     <div>
-<h1><span class="kind-method">get2d</span> method 
+<h1><span class="kind-method">getUnchecked</span> method 
 </h1></div>
 
     <section class="multi-line-signature">
       
-  <div>
-    <ol class="annotation-list">
-        <li>@<a href="https://api.dart.dev/stable/3.4.4/dart-core/override-constant.html">override</a></li>
-    </ol>
-  </div>
 
 <span class="returntype"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
-<span class="name ">get2d</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span></li>
-<li><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span></li>
+<span class="name ">getUnchecked</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="getUnchecked-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span></li>
+<li><span class="parameter" id="getUnchecked-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span></li>
 </ol>)
 
-      <div class="features"><span class="feature">override</span></div>
+      
 
     </section>
     
 <section class="desc markdown">
-  <p>Returns the value of the pattern at the given coordinates.</p>
-<p>The value returned is typically within the range of <code>[-1.0, 1.0]</code>, where:</p>
-<ul>
-<li><code>-1.0</code> represents the lowest value of the pattern;</li>
-<li><code>0.0</code> represents the middle value of the pattern;</li>
-<li><code>1.0</code> represents the highest value of the pattern.</li>
-</ul>
+  <p>Returns the value at the given coordinates.</p>
+<p>If <code>x</code> or <code>y</code> are out of bounds, the behavior is undefined.</p>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">@override
-double get2d(int x, int y) =&gt; _perlin2d(Vec2.fromInts(x, y));</code></pre>
+  <pre class="language-dart"><code class="language-dart">double getUnchecked(int x, int y) =&gt; _values[y * width + x];</code></pre>
 </section>
 
 
@@ -109,12 +98,12 @@ double get2d(int x, int y) =&gt; _perlin2d(Vec2.fromInts(x, y));</code></pre>
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
     <li><a href="../../index.html">mirage</a></li>
     <li><a href="../../mirage/mirage-library.html">mirage</a></li>
-    <li><a href="../../mirage/Perlin-class.html">Perlin</a></li>
-    <li class="self-crumb">get2d method</li>
+    <li><a href="../../mirage/ScalarField-class.html">ScalarField</a></li>
+    <li class="self-crumb">getUnchecked method</li>
 </ol>
 
 
-    <h5>Perlin class</h5>
+    <h5>ScalarField class</h5>
     <div id="dartdoc-sidebar-left-content"></div>
   </div><!--/.sidebar-offcanvas-->
 
@@ -126,7 +115,7 @@ double get2d(int x, int y) =&gt; _perlin2d(Vec2.fromInts(x, y));</code></pre>
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

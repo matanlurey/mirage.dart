@@ -69,7 +69,7 @@
 the given random number generator with the same seed <em>will</em> produce the same
 pattern if and only if the same seed is used and the same number of values
 are generated in the same order.</p>
-<p><img src="https://github.com/user-attachments/assets/5d4989b3-5ffd-46b5-9c90-116019464ff6" alt="Example"></p>
+<p><img src="https://github.com/user-attachments/assets/665131a8-0571-4200-8487-3f6f179f11b1" alt="Example"></p>
 <h2 id="example">Example</h2>
 <pre class="language-dart"><code class="language-dart">final random = Random();
 final pattern = White(random);
@@ -215,15 +215,28 @@ of the given <code>pattern</code>.
 
 </dd>
 
-        <dt id="get2d" class="callable">
-  <span class="name"><a href="../mirage/White/get2d.html">get2d</a></span><span class="signature">(<wbr><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span>)
+        <dt id="get2d" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/get2d.html">get2d</a></span><span class="signature">(<wbr><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of the pattern at the given fixed-point coordinates.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="get2df" class="callable">
+  <span class="name"><a href="../mirage/White/get2df.html">get2df</a></span><span class="signature">(<wbr><span class="parameter" id="get2df-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2df-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span></span>)
     <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
   </span>
   
 
 </dt>
 <dd>
-  Returns the value of the pattern at the given coordinates.
+  Returns the value of the pattern at the given floating-point coordinates.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -436,7 +449,7 @@ from the output of this pattern.
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

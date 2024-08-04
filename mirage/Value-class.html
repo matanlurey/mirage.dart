@@ -71,7 +71,7 @@ compute.</p>
 <p>Ideal for terrain generation, clouds, and other natural looking patterns,
 but can exhibit visible grid artifacts due to linear interpolation, and is
 considered less smooth than <a href="../mirage/Perlin-class.html">Perlin</a> or <a href="../mirage/Simplex-class.html">Simplex</a> noise.</p>
-<p><img src="https://github.com/user-attachments/assets/6c93d6d0-67d1-4bb9-a8fc-6cc00b451a5c" alt="Example"></p>
+<p><img src="https://github.com/user-attachments/assets/fd03f266-785b-4fbd-b532-d8421864f9fb" alt="Example"></p>
 </section>
 
 
@@ -212,15 +212,28 @@ of the given <code>pattern</code>.
 
 </dd>
 
-        <dt id="get2d" class="callable">
-  <span class="name"><a href="../mirage/Value/get2d.html">get2d</a></span><span class="signature">(<wbr><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span>)
+        <dt id="get2d" class="callable inherited">
+  <span class="name"><a href="../mirage/Pattern2d/get2d.html">get2d</a></span><span class="signature">(<wbr><span class="parameter" id="get2d-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2d-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns the value of the pattern at the given fixed-point coordinates.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="get2df" class="callable">
+  <span class="name"><a href="../mirage/Value/get2df.html">get2df</a></span><span class="signature">(<wbr><span class="parameter" id="get2df-param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="get2df-param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span></span>)
     <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span>
   </span>
   
 
 </dt>
 <dd>
-  Returns the value of the pattern at the given coordinates.
+  Returns the value of the pattern at the given floating-point coordinates.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -433,7 +446,7 @@ from the output of this pattern.
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

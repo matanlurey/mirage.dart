@@ -62,8 +62,8 @@
 
     <section class="multi-line-signature">
       const
-      <span class="name ">Pattern2d.from</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="from-param-get"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">get</span>(<ol class="parameter-list"><li><span class="parameter" id="param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span></li>
-<li><span class="parameter" id="param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span></li>
+      <span class="name ">Pattern2d.from</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="from-param-get"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">get</span>(<ol class="parameter-list"><li><span class="parameter" id="param-x"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span></li>
+<li><span class="parameter" id="param-y"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.4.4/dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span></span></li>
 </ol>
 )</span></li>
 </ol>)
@@ -85,7 +85,7 @@ print(pattern.get(1, 2)); // 3.0
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">const factory Pattern2d.from(
-  double Function(int x, int y) get,
+  double Function(double x, double y) get,
 ) = _DelegatePattern2d;</code></pre>
 </section>
 
@@ -120,7 +120,7 @@ print(pattern.get(1, 2)); // 3.0
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   

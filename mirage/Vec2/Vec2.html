@@ -70,13 +70,17 @@
     
 <section class="desc markdown">
   <p>Creates a new 2D vector.</p>
+<p>The components must be finite.</p>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">factory Vec2(double x, double y) =&gt; (x, y) as Vec2;</code></pre>
+  <pre class="language-dart"><code class="language-dart">factory Vec2(double x, double y) {
+  assert(x.isFinite &amp;&amp; y.isFinite, &#39;Vector components must be finite&#39;);
+  return (x, y) as Vec2;
+}</code></pre>
 </section>
 
 
@@ -110,7 +114,7 @@
 <footer>
   <span class="no-break">
     mirage
-      0.1.0+1
+      0.2.0
   </span>
 
   
